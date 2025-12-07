@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <!-- reset CSS -->
+    <title>Contact-pagina</title>
+
+    <!-- reset css voor jouw html-bestand -->
+    <link href="./css/reset.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- font css voor jouw html-bestand -->
+    <link href="./css/fonts.css" rel="stylesheet">    
+    <!-- eigen geschreven css voor jouw html-bestand -->
+    <link href="./css/style.css" rel="stylesheet">    
     <!-- JavaScript: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"defer>
     </script>
-    <!-- eigen geschreven css voor jouw html-bestand -->
-    <link href="./css/style.css" rel="stylesheet">
-    <!-- reset css voor jouw html-bestand -->
-    <link href="./css/reset.css" rel="stylesheet">
+    <!-- eigen geschreven Javascript voor jouw html-bestand -->
+    <script src="./Javascript/script.js" defer></script>
     <!-- reset css voor jouw html-bestand -->
     <link href="./css/fonts.css" rel="stylesheet">
     <link href="./css/map.css" rel="stylesheet">
@@ -87,21 +91,22 @@
                         <fieldset class="row mb-3 g-3 ">
                             <div class="mb-3 col-md-4">
                                 <label for="voornaam" class="form-label">Uw naam <span>*</span></label>
-                                <input type="text" class="form-control" id="voornaam" required>
+                                <input type="text" name="naam" class="form-control" id="voornaam" required>
                             </div>
                             <div class="col-md-8">
                                 <label for="email" class="form-label">Uw e-mail <span>*</span></label>
-                                <input type="email" class="form-control" id="email" required>
+                                <input type="email" name="email" class="form-control" id="email" required>
                             </div>
                             <div class="col-md-10">
-                                <label for="email" class="form-label">Uw bericht: <span>*</span></label>
-                                <textarea class="form-control" placeholder="Ik heb hulp nodig met.." id="floatingTextarea"></textarea>
+                                <label for="floatingTextarea" class="form-label">Uw bericht: <span>*</span></label>
+                                <textarea class="form-control" name="bericht" placeholder="Ik heb hulp nodig met.." id="floatingTextarea" required></textarea>
                             </div>
                             <input type="hidden" name="form-name" value="contact">
                             <p style="display:none;">
-                                <label>Niet invullen: <input name="bot-field"></label>
+                                <label><input name="bot-field"></label>
                             </p>
                         </fieldset>
+                        <div data-netlify-recaptcha="true"></div>
                         <button type="submit" class="btn blauwe-achtergrond m-3 pe-3">verzenden</button>
                     </form>
                 </section>
@@ -133,6 +138,6 @@
             </aside>
         </div>
     </div>    
-    <footer class="container-fluid bg-light text-center h6 small p-4">&copy; 2025 Servaas Descamps</footer>
+    <footer class="container-fluid bg-light text-center h6 small p-4">&copy; <span id="year"></span> Servaas Descamps</footer>
 </body>
 </html>

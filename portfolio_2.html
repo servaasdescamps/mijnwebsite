@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-     <!-- reset CSS -->
+    <title>Project 2</title>
+
+    <!-- reset css voor jouw html-bestand -->
+    <link href="./css/reset.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- font css voor jouw html-bestand -->
+    <link href="./css/fonts.css" rel="stylesheet">    
+    <!-- eigen geschreven css voor jouw html-bestand -->
+    <link href="./css/style.css" rel="stylesheet">    
     <!-- JavaScript: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"defer>
     </script>
-    <!-- eigen geschreven css voor jouw html-bestand -->
-    <link href="./css/style.css" rel="stylesheet">
-    <!-- reset css voor jouw html-bestand -->
-    <link href="./css/reset.css" rel="stylesheet">
-    <!-- reset css voor jouw html-bestand -->
-    <link href="./css/fonts.css" rel="stylesheet">
+    <!-- eigen geschreven Javascript voor jouw html-bestand -->
+    <script src="./Javascript/script.js" defer></script>
 
 </head>
 
@@ -69,14 +71,52 @@
                 <section id="portfolio-intro" class="row">
                     <article class="portfolio-item">
                         <h2 class="m-3">Project 2</h2>
-                        <a href="portfolio_2.html" rel="noopener">
-                            <figure><img src="./assets/fotowebsite2.jpg" class="foto" alt="foto van een moederbord" title="Moederbord">
-                            </figure>
-                        </a>
                     </article>
-                        <p class="h6 small">Korte beschrijving 2</p>
+                        <p class="h6 small m-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nobis architecto beatae. Cumque accusantium quaerat asperiores nemo quod natus corrupti molestias illo explicabo perferendis eius quo adipisci possimus nihil, sapiente saepe fugit amet ex aut. Porro amet eos tempore molestiae quod. Impedit quae mollitia labore repellat voluptates, aperiam facere atque nisi adipisci libero consectetur deserunt blanditiis error fuga ipsum veniam esse qui laborum omnis dolores tenetur. Quam odio deserunt harum nemo a id maiores animi commodi nesciunt, adipisci maxime debitis hic quos quia eaque laboriosam voluptates doloremque sequi? Vero, placeat, a delectus voluptatibus ullam sapiente, nulla recusandae harum beatae consequuntur itaque atque cupiditate facilis! Commodi, dolores minus illum minima quod ratione earum eveniet maxime in eius distinctio, inventore alias ex repudiandae nobis perferendis unde rem error tempore quasi similique eaque totam? Quibusdam at corporis facere doloremque excepturi adipisci quasi quae non! Reprehenderit laudantium ex velit dolor ab facilis dicta, error aspernatur, eum nihil similique sequi sunt libero saepe eaque sint commodi sed vitae id laborum inventore! Officiis eius necessitatibus fuga, quisquam repellat eveniet dolor neque. Ab nulla maxime nostrum eveniet, dignissimos, laborum nobis tenetur error, rem debitis sit quo reprehenderit possimus dolor? Placeat sed quis dolores molestias quod tempore vitae pariatur quaerat. Officia fugit, quas enim voluptas sit architecto itaque.</p>
                     </article>
                 </section>
+                <section id="slider" class="row m-3 col-12">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>                
+                        </div>
+                        <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <img src="assets/resized foto 1.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-sm-block">
+                            <p class="witte-letters">© DeepAI</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="assets/resized foto 2.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-sm-block">
+                            <p class="witte-letters">© DeepAI</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/resized foto 3.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-sm-block">
+                            <p class="witte-letters">© DeepAI</p>
+                            </div>
+                        </div>             
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </section>                   
             </main>
             <aside class="col-md-3">
                 <ul class="list-group blauwe-achtergrond" id="projectlijst" role="tablist">
@@ -101,6 +141,6 @@
             </aside>
         </div>
     </div>
-    <footer class="container-fluid bg-light text-center h6 small p-4">&copy; 2025 Servaas Descamps</footer>
+    <footer class="container-fluid bg-light text-center h6 small p-4">&copy; <span id="year"></span> Servaas Descamps</footer>
 </body>
 </html>

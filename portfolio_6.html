@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-     <!-- reset CSS -->
+    <title>Project 6</title>
+
+    <!-- reset css voor jouw html-bestand -->
+    <link href="./css/reset.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- font css voor jouw html-bestand -->
+    <link href="./css/fonts.css" rel="stylesheet">    
+    <!-- eigen geschreven css voor jouw html-bestand -->
+    <link href="./css/style.css" rel="stylesheet">    
     <!-- JavaScript: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"defer>
     </script>
-    <!-- eigen geschreven css voor jouw html-bestand -->
-    <link href="./css/style.css" rel="stylesheet">
-    <!-- reset css voor jouw html-bestand -->
-    <link href="./css/reset.css" rel="stylesheet">
-    <!-- reset css voor jouw html-bestand -->
-    <link href="./css/fonts.css" rel="stylesheet">
+    <!-- eigen geschreven Javascript voor jouw html-bestand -->
+    <script src="./Javascript/script.js" defer></script>
 
 </head>
 
@@ -69,12 +71,50 @@
                 <section id="portfolio-intro" class="row">
                     <article class="portfolio-item">
                         <h2 class="m-3">Project 6</h2>
-                        <a href="portfolio_6.html" rel="noopener">
-                            <figure><img src="./assets/fotowebsite6.jpg" class="foto" alt="foto van de Matrix" title="De Matrix">
-                            </figure>
-                        </a>
-                        <p class="h6 small">Korte beschrijving 6</p>
+                        <p class="h6 small m-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et eius enim necessitatibus assumenda aspernatur a culpa. Ipsa beatae reiciendis voluptatem id, asperiores quo ullam provident! Illo et, laboriosam esse minus, fuga tempora suscipit voluptatem voluptate possimus error ipsa iste, deserunt numquam ut quod debitis culpa! Numquam id ullam cum esse velit rerum ipsam ad consequatur debitis nobis at sint ipsum quis et eos perferendis, laborum voluptates blanditiis non dolorum magnam explicabo asperiores. Perferendis expedita ad fugiat doloremque? Maxime ea et optio fugit, est quae, animi odio saepe cupiditate inventore quas id sint doloribus magnam quisquam, perspiciatis ducimus minus sequi! Quis dicta alias laboriosam sit? Voluptatibus quos rerum, illo aspernatur alias aperiam maiores animi maxime esse accusamus ut dolore. Esse sit temporibus debitis, deleniti quo eligendi incidunt repellendus in voluptates? Culpa dolorum optio pariatur, vel maxime unde recusandae dolorem minus dolor alias? Eum quidem eos ipsum! Repellat minus doloribus aperiam, aliquid est recusandae tempora repudiandae in expedita, possimus, impedit commodi? Quaerat, doloremque! Unde eius reprehenderit aliquam sapiente minima consequatur ex? Eum enim nulla odit id architecto quis, nihil eligendi consequuntur, voluptatum sapiente vel libero unde quae possimus soluta quod laboriosam placeat aut beatae quidem. Sed deserunt, itaque ab quibusdam nihil nobis assumenda dolores magni autem officiis consequatur, aliquam facere, saepe dolore in reiciendis? Quam quasi nulla eos quia culpa enim accusantium recusandae placeat, iure maxime repellendus quo non deserunt! Provident placeat facere saepe officia autem quam tempore neque inventore porro in assumenda accusantium accusamus, error cupiditate vero iure voluptatibus beatae natus officiis atque cumque. Harum sequi libero quo voluptatibus dicta, non, consequuntur, nam atque laborum suscipit nisi corporis qui iusto cupiditate esse eius! Nihil omnis placeat atque, eligendi sequi voluptatem soluta hic voluptatibus ex consequuntur minima dolorum! Quos minima consequuntur nobis cumque eligendi atque quis quia inventore recusandae? Dignissimos, corporis non!</p>
                     </article>
+                </section>
+                                <section id="slider" class="row m-3 col-12">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>                
+                        </div>
+                        <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <img src="assets/resized 4.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-sm-block">
+                            <p class="witte-letters">© DeepAI</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/resized 5.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-sm-block">
+                            <p class="witte-letters">© DeepAI</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="assets/resized 6.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-sm-block">
+                            <p class="witte-letters">© DeepAI</p>
+                            </div>
+                        </div>             
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </section>
             </main>
             <aside class="col-md-3">
@@ -100,6 +140,6 @@
             </aside>
         </div>
     </div>
-    <footer class="container-fluid bg-light text-center h6 small p-4">&copy; 2025 Servaas Descamps</footer>
+    <footer class="container-fluid bg-light text-center h6 small p-4">&copy; <span id="year"></span> Servaas Descamps</footer>
 </body>
 </html>
