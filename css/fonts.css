@@ -1,0 +1,173 @@
+html {
+    display: block;
+}
+
+body {
+    margin: 0px;
+    font-family: system-ui, sans-serif;
+    font-size: 16px;
+    line-height: normal;
+    color: #000;
+    background-color: #fff;
+}
+
+/* ====== TEKST-ELEMENTEN ====== */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0.83em 0;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+    font-weight: bold;
+}
+
+h4 {
+    margin: 1.33em 0;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+    font-weight: bold;
+}
+
+h6 {
+    font-size: 0.67em;
+    margin: 2.33em 0;
+    font-weight: bold;
+}
+
+p {
+    margin: 1em 0;
+}
+
+b, strong {
+    font-weight: bolder;
+}
+
+i, em {
+    font-style: italic;
+}
+
+small {
+    font-size: 80%;
+}
+
+/* ====== LINKS ====== */
+
+a {
+    color: -webkit-link;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* ====== LIJSTEN ====== */
+
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    margin: 1em 0;
+    padding-left: 40px;
+}
+
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin: 1em 0;
+    padding-left: 40px;
+}
+
+li {
+    display: list-item;
+}
+
+/* ====== TABELLEN ====== */
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    border-spacing: 2px;
+}
+
+tr {
+    display: table-row;
+}
+
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+    padding: 1px;
+}
+
+th {
+    font-weight: bold;
+}
+
+/* ====== FORMULIER-ELEMENTEN ====== */
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+textarea {
+    overflow: auto;
+}
+
+button {
+    padding: 1px 6px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* ====== MEDIA & FIGURE ====== */
+
+img {
+    display: inline-block;
+}
+
+figure {
+    display: block;
+    margin: 1em 40px;
+}
+
+/* ====== BLOCKQUOTE & CITE ====== */
+
+blockquote {
+    margin: 1em 40px;
+}
+
+pre {
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0;
+}
+
+/* ====== HR ====== */
+
+hr {
+    border-style: inset;
+    border-width: 1px;
+    margin: 0.5em auto;
+}

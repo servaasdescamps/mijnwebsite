@@ -3,44 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio 1</title>
-</head>
+    <title>Home</title>
+     <!-- reset CSS -->
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- JavaScript: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"defer>
     </script>
     <!-- eigen geschreven css voor jouw html-bestand -->
     <link href="./css/style.css" rel="stylesheet">
+    <!-- reset css voor jouw html-bestand -->
+    <link href="./css/reset.css" rel="stylesheet">
+    <!-- reset css voor jouw html-bestand -->
+    <link href="./css/fonts.css" rel="stylesheet">
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md sticky-top" style="background-color:#143447;">
+    <nav class="navbar navbar-expand-md sticky-top blauwe-achtergrond">
         <div class="container-fluid">
-            <a class="" href="index.html"><img src="./assets/Logo_ServaasDescamps.png" alt="Netwerkbeheerder Servaas Descamps" width="100" height="105">
+            <a class="witte-letters" href="index.html"><img src="./assets/Logo_ServaasDescamps.png" alt="Netwerkbeheerder Servaas Descamps" width="100" height="105">
             </a>
-            <button class="navbar-toggler" style="background-color: #ff0763;"type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            <button class="navbar-toggler rode-achtergrond"type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse background-color: #143447;" id="navbarSupportedContent">
-            <ul class="navbar-nav nav-underline" style="color:#ff0763">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-underline">
                 <li class="nav-item">
                 <li>
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li>
                     <a class="nav-link" href="portfolio.html">Projecten</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="portfolio.html" role="button" aria-expanded="false">Overzicht</a>
-                    <ul class="dropdown-menu" style="background-color: #ff0763;">
-                        <li><a class="dropdown-item active" style="background-color:#143447" href="portfolio_1.html">Project 1</a></li>
+                    <ul class="dropdown-menu blauwe-achtergrond witte-letters">
+                        <li><a class="dropdown-item active" href="portfolio_1.html">Project 1</a></li>
                         <li><a class="dropdown-item" href="portfolio_2.html">Project 2</a></li>
                         <li><a class="dropdown-item" href="portfolio_3.html">Project 3</a></li>
                         <li><a class="dropdown-item" href="portfolio_4.html">Project 4</a></li>
@@ -56,17 +58,17 @@
         </div>
     </nav>
 
-    <header class="m-4">
-        <h1 class="display-3" style="color:#143447;">Netwerkbeheerder</h1>
+    <header class="m-3">
+        <h1 class="display-3 blauwe-letters">Netwerkbeheerder</h1>
         <hr>
     </header>
 
     <div class="container">
         <div class="row">
-            <main>
+            <main class="col-md-9">
                 <section id="portfolio-intro" class="row">
                     <article class="portfolio-item">
-                        <h2 class="">Project 1</h2>
+                        <h2 class="m-3">Project 1</h2>
                         <a href="portfolio_1.html" rel="noopener">
                             <figure>
                             <img src="./assets/fotowebsite1.jpg" class="foto" alt="afbeelding van datacenter" title="Datacenter">
@@ -76,7 +78,29 @@
                     </article>
                 </section>
             </main>
+            <aside class="col-md-3">
+                <ul class="list-group blauwe-achtergrond" id="projectlijst" role="tablist">
+                    <a class="list-group-item list-group-item-action rode-achtergrond active" data-toggle="list" href="portfolio_1.html" role="tab">Project 1</a>
+                    <a class="list-group-item list-group-item-action blauwe-achtergrond" data-toggle="list" href="portfolio_2.html" role="tab">Project 2</a>
+                    <a class="list-group-item list-group-item-action blauwe-achtergrond" data-toggle="list" href="portfolio_3.html" role="tab">Project 3</a>
+                    <a class="list-group-item list-group-item-action blauwe-achtergrond" data-toggle="list" href="portfolio_4.html" role="tab">Project 4</a>
+                    <a class="list-group-item list-group-item-action blauwe-achtergrond" data-toggle="list" href="portfolio_5.html" role="tab">Project 5</a>
+                    <a class="list-group-item list-group-item-action blauwe-achtergrond" data-toggle="list" href="portfolio_6.html" role="tab">Project 6</a>
+                </ul>
+                <ul class="list-inline socials">
+                <li class="list-inline-item">
+                    <a href="https://www.linkedin.com/in/servaas-descamps-7092b53a0/" target="_blank">
+                    <i class="bi bi-linkedin blauwe-letters fs-2"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://github.com/servaasdescamps" target="_blank">
+                    <i class="bi bi-github blauwe-letters fs-2"></i>
+                    </a>
+                </li>               
+            </aside>
         </div>
     </div>
+    <footer class="container-fluid bg-light text-center h6 small p-4">&copy; 2025 Servaas Descamps</footer>
 </body>
 </html>
